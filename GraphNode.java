@@ -1,22 +1,27 @@
-
 public class GraphNode {
 
-//	I need 2 variables, name and mark
-	
-	public GraphNode(int name) {
-//		It's probably worth it to do something with that name argument
-	}
+    // Fields for the node's name and its marked status
+    private int name; // The unique identifier for this node
+    private boolean mark; // Whether the node is marked (visited or not)
 
-	
-//	setters and getters, should be fun
-	public void mark(boolean mark) {
-		
-	}
-	
-	public boolean isMarked() {
-	}
-	
-	public int getName() {
-	}
-	
+    // Constructor to initialize the node with a name
+    public GraphNode(int name) {
+        this.name = name;
+        this.mark = false; // Default mark value is false (unmarked)
+    }
+
+    // Setter for the mark field
+    public void mark(boolean mark) {
+        this.mark = mark;
+    }
+
+    // Getter for the mark field
+    public boolean isMarked() {
+        return mark;
+    }
+
+    // Getter for the name field
+    public int getName() {
+        return name;
+    }
 }
